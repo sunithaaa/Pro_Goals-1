@@ -1,4 +1,3 @@
-//App.js
 import React from 'react';
 import EmployeePage from './components/EmployeePage';
 import { HashRouter, Switch, Route} from "react-router-dom";
