@@ -1,6 +1,6 @@
 import React from 'react';
 import './EmployeePage.css';
-import pro from '/reactapp/pro_goals/src/images/pro.png';
+import pro from '../images/pro.png';
 import {NavLink} from 'react-router-dom';
 
 
@@ -17,9 +17,33 @@ class EmployeePage extends React.Component{
                     <NavLink to='/'><button id="Emplogout">LOG OUT</button></NavLink>
                     </div>
                 </div>
-                <div className="AddGoal">
-                    
+                <div className="add_goals">
+                <div className="add_week_goal">
+                    <h1>Add week goals and objectives</h1>
                 </div>
+
+                <div >
+                    <label id="1">start date:</label><br/>
+                    <input className="date1" type="date"placeholder="Set start date" required></input>
+                </div>    
+                
+                <div >
+                    <label>end date:</label><br/>
+                    <input className="date2" type="date"placeholder="Set start date" required></input>
+                </div> 
+                <br/>
+                <div>
+                    <textarea className="text_box">
+                        <label>enter text</label>
+                    </textarea>
+                </div>
+                <div>
+                    <button id="btn">
+                        Add
+                    </button>
+                </div>
+            </div>
+
                 
             </div>
         );
